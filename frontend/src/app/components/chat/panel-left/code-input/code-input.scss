@@ -50,11 +50,21 @@ section {
         height: 100%;
         overflow: auto;
         tab-size: 4;
-        
+        white-space: pre;
+        cursor: default;
 
         &::placeholder {
             color: var(--muted);
             opacity: 0.5;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--border2);
+            border-radius: 4px;
         }
     }
 }
