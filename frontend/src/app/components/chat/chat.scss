@@ -3,4 +3,9 @@ main {
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
     height: calc(100vh - 65px);
+
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
+    }
 }
