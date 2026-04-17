@@ -1,0 +1,13 @@
+.section-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}

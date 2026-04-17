@@ -1,0 +1,98 @@
+section {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-left: 3px solid transparent;
+
+    &.sev-high {
+        border-left-color: var(--red);
+    }
+    &.sev-medium {
+        border-left-color: var(--amber);
+    }
+    &.sev-low {
+        border-left-color: var(--green);
+    }
+
+    .issue-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 6px;
+
+        .issue-title {
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    }
+
+    .sev-badge {
+        font-size: 10px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    .sev-high-bg {
+        background: rgba(248, 113, 113, 0.15);
+        color: var(--red);
+    }
+    .sev-medium-bg {
+        background: rgba(251, 191, 36, 0.15);
+        color: var(--amber);
+    }
+    .sev-low-bg {
+        background: rgba(34, 211, 160, 0.12);
+        color: var(--green);
+    }
+
+    .issue-desc {
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+
+    .issue-line {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--accent2);
+        opacity: 0.7;
+    }
+
+    .why-btn {
+        font-family: var(--sans);
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--accent2);
+        background: rgba(124, 106, 255, 0.1);
+        border: 1px solid rgba(124, 106, 255, 0.2);
+        padding: 3px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.15s;
+        margin-top: 8px;
+
+        &:hover {
+            background: rgba(124, 106, 255, 0.18);
+        }
+    }
+
+    .why-panel {
+        margin-top: 10px;
+        padding: 10px 12px;
+        background: rgba(124, 106, 255, 0.06);
+        border-radius: 6px;
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.7;
+        border: 1px solid rgba(124, 106, 255, 0.12);
+    }
+}

@@ -1,0 +1,13 @@
+<section class="sev-high animate-in">
+    <div class="issue-header">
+        <div class="issue-title">Logging sensitive data</div>
+        <span class="sev-badge sev-high-bg">high</span>
+    </div>
+    <div class="issue-desc">Passwords written to console are captured by log aggregators and retained indefinitely.
+    </div>
+    <div class="issue-line">Line 7</div>
+    <button class="why-btn">▼ Why is this bad?</button>
+    <div class="why-panel" style="display: none;">An attacker can pass `1 OR 1=1` to bypass auth. Use parameterized
+        queries:
+        `db.execute("...WHERE id=?",[userId])`.</div>
+</section>
