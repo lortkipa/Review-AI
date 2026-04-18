@@ -8,8 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './action-bar.scss',
 })
 export class ActionBar {
-  @Input() disableReviewBtn: boolean = true;
-  @Input() disableFixBtn: boolean = true;
+  @Input() disableBtns: boolean = true;
 
   @Output() submitReview = new EventEmitter()
   emitSubmitReview() {

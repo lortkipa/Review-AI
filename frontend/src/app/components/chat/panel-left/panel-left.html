@@ -8,7 +8,6 @@
         (codeInput)="emitCodeInput($event)"></app-code-input>
 
     <app-action-bar
-        [disableReviewBtn]="code.trim() == ''"
-        [disableFixBtn]="true"
+        [disableBtns]="code.trim() == ''"
         (submitReview)="emitSubmitReview()"></app-action-bar>
 </section>

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -14,10 +18,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,11 +27,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IssueDTO.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\IssueDTO.cs",
               "RelativeDocumentMoniker": "..\\Service\\Service\\DTOs\\IssueDTO.cs",
@@ -39,12 +39,11 @@
               "RelativeToolTip": "..\\Service\\Service\\DTOs\\IssueDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T06:42:21.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T06:42:21.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ReviewDTO.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\ReviewDTO.cs",
               "RelativeDocumentMoniker": "..\\Service\\Service\\DTOs\\ReviewDTO.cs",
@@ -52,12 +51,11 @@
               "RelativeToolTip": "..\\Service\\Service\\DTOs\\ReviewDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T06:41:53.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T06:41:53.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ChatController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ChatController.cs",
@@ -65,12 +63,11 @@
               "RelativeToolTip": "API\\Controllers\\ChatController.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T06:35:55.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T06:35:55.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -83,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ChatService.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\ChatService.cs",
               "RelativeDocumentMoniker": "..\\Service\\Service\\ChatService.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\ChatService.cs",
               "RelativeToolTip": "..\\Service\\Service\\ChatService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAwDsAAACnAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAADMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T04:29:42.979Z",
               "EditorCaption": ""
