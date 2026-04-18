@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, signal, ViewChild, viewChild } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -10,6 +10,8 @@ import { Component, signal } from '@angular/core';
 })
 export class CodeInput {
   lineCount = signal<number>(0)
+
+  @ViewChild('lineNumbers') lineNumbers!: ElementRef<HTMLDivElement>;
 
   getRange(n: number): number[] {
     if (n == 0) {
@@ -42,5 +44,10 @@ export class CodeInput {
 
     // move cursor after inserted tab
     textarea.selectionStart = textarea.selectionEnd = start + tab.length;
+  }
+
+  syncScroll(textarea: HTMLTextAreaElement) {
+    if (!this.lineNumbers) return;
+    this.lineNumbers.nativeElement.scrollTop = textarea.scrollTop;
   }
 }

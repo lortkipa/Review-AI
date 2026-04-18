@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Header } from './header/header';
-import { Issues } from "./issues/issues";
+import { Content } from "./content/content";
 
 @Component({
   standalone: true,
   selector: 'app-panel-right',
-  imports: [Header, Issues],
+  imports: [Header, Content],
   templateUrl: './panel-right.html',
   styleUrl: './panel-right.scss',
 })

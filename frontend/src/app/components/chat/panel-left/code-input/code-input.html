@@ -1,5 +1,5 @@
 <section>
-    <div class="line-numbers" id="line-numbers">
+    <div class="line-numbers" id="line-numbers" #lineNumbers>
         <div class="line-num" *ngFor="let i of getRange(lineCount())">{{i}}</div>
     </div>
     <textarea 
@@ -11,5 +11,6 @@
         autocorrect="off" 
         autocomplete="off"
         (input)="setLineCount(codeInput.value)"
-        (keydown)="handleTab($event, codeInput)"></textarea>
+        (keydown)="handleTab($event, codeInput)"
+        (scroll)="syncScroll(codeInput)"></textarea>
 </section>
