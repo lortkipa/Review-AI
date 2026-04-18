@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -10,4 +10,9 @@ import { Component, Input } from '@angular/core';
 })
 export class Toolbar {
   @Input() language: string = ''
+
+  @Output() codeClear = new EventEmitter()
+  emitCodeClear() {
+    this.codeClear.emit()
+  }
 }

@@ -1,6 +1,7 @@
 <section>
     <app-toolbar
-        [language]="language"></app-toolbar>
+        [language]="language"
+        (codeClear)="emitCodeInput('')"></app-toolbar>
 
     <app-code-input
         [code]="code"
