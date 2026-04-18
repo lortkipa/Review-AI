@@ -1,7 +1,13 @@
 <section>
-    <app-toolbar></app-toolbar>
+    <app-toolbar
+        [language]="language"></app-toolbar>
 
-    <app-code-input></app-code-input>
+    <app-code-input
+        [code]="code"
+        (codeInput)="emitCodeInput($event)"></app-code-input>
 
-    <app-action-bar></app-action-bar>
+    <app-action-bar
+        [disableReviewBtn]="code.trim() == ''"
+        [disableFixBtn]="true"
+        (submitReview)="emitSubmitReview()"></app-action-bar>
 </section>

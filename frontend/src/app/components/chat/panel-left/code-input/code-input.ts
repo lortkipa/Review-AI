@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, signal, ViewChild, viewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, output, signal, ViewChild, viewChild } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -9,9 +9,16 @@ import { Component, ElementRef, signal, ViewChild, viewChild } from '@angular/co
   styleUrl: './code-input.scss',
 })
 export class CodeInput {
+  @Input() code: string = ''
+
   lineCount = signal<number>(0)
 
   @ViewChild('lineNumbers') lineNumbers!: ElementRef<HTMLDivElement>;
+
+  @Output() codeInput = new EventEmitter<string>()
+  emitCodeInput(input: string) {
+    this.codeInput.emit(input)
+  }
 
   getRange(n: number): number[] {
     if (n == 0) {

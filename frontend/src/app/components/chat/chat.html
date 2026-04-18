@@ -1,6 +1,13 @@
 <app-header></app-header>
 
 <main>
-    <app-panel-left></app-panel-left>
-    <app-panel-right></app-panel-right>
+    <app-panel-left
+        [code]="code()"
+        [language]="review()?.language ?? ''"
+        (codeInput)="updateCode($event)"
+        (submitReview)="submitReview()"></app-panel-left>
+
+    <app-panel-right
+        [review]="review()"
+        [loading]="isAiProcessing()"></app-panel-right>
 </main>

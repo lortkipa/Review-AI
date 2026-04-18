@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Header } from './header/header';
 import { Content } from "./content/content";
+import { ReviewModel } from '../../../models/review';
 
 @Component({
   standalone: true,
@@ -9,4 +10,7 @@ import { Content } from "./content/content";
   templateUrl: './panel-right.html',
   styleUrl: './panel-right.scss',
 })
-export class PanelRight { }
+export class PanelRight { 
+  @Input() review: ReviewModel|null = null;
+  @Input() loading: boolean = false;
+}

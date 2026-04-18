@@ -1,8 +1,8 @@
 <section>
     <div class="toolbar-left">
-        <div class="detected-lang" id="detected-lang">
+        <div class="detected-lang" id="detected-lang"  *ngIf="!!language">
             <div class="lang-dot"></div>
-            <span id="detected-lang-text">JavaScript</span>
+            <span id="detected-lang-text">{{language}}</span>
         </div>
     </div>
     <div class="toolbar-right">

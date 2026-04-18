@@ -1,5 +1,8 @@
 <section>
-    <app-empty-state></app-empty-state>
-    <!-- <app-loading></app-loading> -->
-    <!-- <app-issues></app-issues> -->
+    <app-empty-state *ngIf="!loading && !review"></app-empty-state>
+    <app-loading *ngIf="loading"></app-loading>
+    <app-issues 
+        [score]="review.codeQuality"
+        [issues]="review.issues ?? []"
+        *ngIf="!loading && review"></app-issues>
 </section>

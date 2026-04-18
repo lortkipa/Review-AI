@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './action-bar.html',
   styleUrl: './action-bar.scss',
 })
-export class ActionBar {}
+export class ActionBar {
+  @Input() disableReviewBtn: boolean = true;
+  @Input() disableFixBtn: boolean = true;
+
+  @Output() submitReview = new EventEmitter()
+  emitSubmitReview() {
+    this.submitReview.emit()
+  }
+}

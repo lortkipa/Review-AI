@@ -10,7 +10,7 @@
         spellcheck="false"
         autocorrect="off" 
         autocomplete="off"
-        (input)="setLineCount(codeInput.value)"
+        (input)="setLineCount(codeInput.value); emitCodeInput(codeInput.value)"
         (keydown)="handleTab($event, codeInput)"
         (scroll)="syncScroll(codeInput)"></textarea>
 </section>

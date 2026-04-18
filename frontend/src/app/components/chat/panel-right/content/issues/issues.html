@@ -1,13 +1,29 @@
-<app-score-card></app-score-card>
+<app-score-card
+    [score]="score"
+    [criticalErrCount]="issues.filter(i => i.severity === 'critical').length"
+    [mediumErrCount]="issues.filter(i => i.severity === 'medium').length"
+    [lowErrCount]="issues.filter(i => i.severity === 'low').length"></app-score-card>
 
-<app-section-title title="⚠ Critical issues"></app-section-title>
-<app-issue></app-issue>
-<app-issue></app-issue>
+<app-section-title 
+    title="⚠ Critical issues"
+    *ngIf="issues.filter(i => i.severity === 'critical').length > 0"></app-section-title>
+<app-issue 
+    *ngFor="let issue of issues.filter(i => i.severity === 'critical')" 
+    [issue]="issue">
+</app-issue>
 
-<app-section-title title="◆ Warnings"></app-section-title>
-<app-issue></app-issue>
+<app-section-title 
+    title="◆ Warnings"
+    *ngIf="issues.filter(i => i.severity === 'medium').length > 0"></app-section-title>
+<app-issue 
+    *ngFor="let issue of issues.filter(i => i.severity === 'medium')" 
+    [issue]="issue">
+</app-issue>
 
-<app-section-title title="● Suggestions"></app-section-title>
-<app-issue></app-issue>
-<app-issue></app-issue>
-<app-issue></app-issue>
+<app-section-title 
+    title="● Suggestions"
+    *ngIf="issues.filter(i => i.severity === 'low').length > 0"></app-section-title>
+<app-issue 
+    *ngFor="let issue of issues.filter(i => i.severity === 'low')" 
+    [issue]="issue">
+</app-issue>

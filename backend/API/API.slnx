@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../Dal/Dal/Dal.csproj" />
+  <Project Path="../Data/Data/Data.csproj" />
+  <Project Path="../Service/Service/Service.csproj" />
+  <Project Path="API/API.csproj" />
+</Solution>

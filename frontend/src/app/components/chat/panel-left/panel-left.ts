@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Toolbar } from "./toolbar/toolbar";
 import { CodeInput } from './code-input/code-input';
 import { ActionBar } from './action-bar/action-bar';
@@ -10,4 +10,18 @@ import { ActionBar } from './action-bar/action-bar';
   templateUrl: './panel-left.html',
   styleUrl: './panel-left.scss',
 })
-export class PanelLeft {}
+export class PanelLeft {
+  @Input() code: string = ''
+  
+  @Input() language: string = ''
+
+  @Output() codeInput = new EventEmitter<string>()
+  emitCodeInput(input: string) {
+    this.codeInput.emit(input)
+  }
+
+  @Output() submitReview = new EventEmitter()
+  emitSubmitReview() {
+    this.submitReview.emit()
+  }
+}
