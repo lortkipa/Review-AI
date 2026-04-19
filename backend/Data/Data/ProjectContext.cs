@@ -1,4 +1,6 @@
 ﻿using Azure;
+using Data.Configurations;
+using Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +12,7 @@ namespace Data
     public class ProjectContext : DbContext
     {
         // DBSet properties
-        // ...
+        public DbSet<User> Users { get; set; }
 
         public ProjectContext()
         {
@@ -29,7 +31,7 @@ namespace Data
             base.OnModelCreating(modelBuilder);
 
             // add configurations
-            // ...
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
 
             // seeding
             // ...

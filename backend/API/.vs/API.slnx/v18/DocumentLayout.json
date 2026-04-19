@@ -3,21 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80748BCF-D96E-A7FC-68DE-F238F9CDE961}|..\\Data\\Data\\Data.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\data\\data\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\api\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\SourceServer\\11b2bb5a3ee6b5b5c82d91fb29c320589d50619d6cb13c056bbc55ed51093ae6\\backend\\Service\\Service\\ChatService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\api\\api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\dtos\\issuedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DD19FC0-7E39-41D6-D1CE-2CEC6A9DAB4B}|..\\Service\\Service\\Service.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\service\\service\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|c:\\users\\administrator\\desktop\\review ai\\backend\\api\\api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,64 +45,119 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IssueDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\IssueDTO.cs",
-              "RelativeDocumentMoniker": "..\\Service\\Service\\DTOs\\IssueDTO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\IssueDTO.cs",
-              "RelativeToolTip": "..\\Service\\Service\\DTOs\\IssueDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T06:42:21.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReviewDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\ReviewDTO.cs",
-              "RelativeDocumentMoniker": "..\\Service\\Service\\DTOs\\ReviewDTO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\ReviewDTO.cs",
-              "RelativeToolTip": "..\\Service\\Service\\DTOs\\ReviewDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T06:41:53.833Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ChatController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "API\\Controllers\\ChatController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBkAAAAAAAAAAAAAAA==",
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Data\\Data\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Data\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Data\\Data\\BaseRepository.cs",
+              "RelativeToolTip": "..\\Data\\Data\\BaseRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwvzYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T06:35:55.982Z"
+              "WhenOpened": "2026-04-19T18:53:03.353Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T06:35:52.173Z",
+              "WhenOpened": "2026-04-19T18:53:01.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\SourceServer\\11b2bb5a3ee6b5b5c82d91fb29c320589d50619d6cb13c056bbc55ed51093ae6\\backend\\Service\\Service\\ChatService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\11b2bb5a3ee6b5b5c82d91fb29c320589d50619d6cb13c056bbc55ed51093ae6\\backend\\Service\\Service\\ChatService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\SourceServer\\11b2bb5a3ee6b5b5c82d91fb29c320589d50619d6cb13c056bbc55ed51093ae6\\backend\\Service\\Service\\ChatService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\11b2bb5a3ee6b5b5c82d91fb29c320589d50619d6cb13c056bbc55ed51093ae6\\backend\\Service\\Service\\ChatService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T17:11:18.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ChatService.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\ChatService.cs",
               "RelativeDocumentMoniker": "..\\Service\\Service\\ChatService.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\ChatService.cs",
               "RelativeToolTip": "..\\Service\\Service\\ChatService.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAADMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAF4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T04:29:42.979Z",
+              "WhenOpened": "2026-04-19T17:09:53.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "API\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T17:06:53.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "..\\Service\\Service\\DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "..\\Service\\Service\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T16:41:04.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\Service\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\Service\\Service\\UserService.cs",
+              "RelativeToolTip": "..\\Service\\Service\\UserService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T13:54:26.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "API\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T13:50:32.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Review AI\\backend\\API\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAqwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T12:39:13.86Z",
               "EditorCaption": ""
             }
           ]

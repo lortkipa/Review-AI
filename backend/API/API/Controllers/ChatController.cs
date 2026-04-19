@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service;
 
@@ -15,6 +16,7 @@ namespace API.Controllers
             _chatService = chatService;
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<string>> Post([FromBody] string code)
         {

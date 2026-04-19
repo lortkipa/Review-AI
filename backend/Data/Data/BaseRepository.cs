@@ -9,7 +9,7 @@ namespace Data
     {
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
-        Task AddAsync(T entity);
+        Task<T> AddAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(int id);
     }
@@ -35,12 +35,14 @@ namespace Data
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task AddAsync(T entity)
+        public async Task<T> AddAsync(T entity)
         {
             if (entity == null) throw new ArgumentNullException(nameof(entity), typeof(T).Name + "can't be null.");
 
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
+
+            return entity;
         }
 
         public async Task UpdateAsync(T entity)

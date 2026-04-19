@@ -1,8 +1,14 @@
 
+using Dal.Repositories;
 using Data;
-using Microsoft.EntityFrameworkCore;
 using DotNetEnv;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Service;
+using Service.Mapper;
+using System.Security.Claims;
+using System.Text;
 
 namespace API
 {
@@ -30,13 +36,59 @@ namespace API
             builder.Services.AddScoped<DbContext, ProjectContext>();
 
             // add jwt authentication
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+           .AddJwtBearer(options =>
+           {
+               options.TokenValidationParameters = new TokenValidationParameters
+               {
+                   ValidateIssuerSigningKey = true,
+                   IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(builder.Configuration["JWTConfig:Key"])),
+
+                   ValidateIssuer = false,
+                   ValidateAudience = false,
+                   ValidateLifetime = true,
+
+                   // 🔹 Only name identifier (userId) is relevant
+                   NameClaimType = ClaimTypes.NameIdentifier,
+                   RoleClaimType = ClaimTypes.Role // optional, won't be used
+               };
+
+               options.Events = new JwtBearerEvents
+               {
+                   OnMessageReceived = context =>
+                   {
+                       // 1️⃣ Check cookie first (optional)
+                       if (context.Request.Cookies.ContainsKey("Token"))
+                       {
+                           context.Token = context.Request.Cookies["Token"];
+                       }
+
+                       // 2️⃣ Fallback to Authorization header
+                       if (string.IsNullOrEmpty(context.Token) &&
+                            context.Request.Headers.ContainsKey("Authorization"))
+                       {
+                           var authHeader = context.Request.Headers["Authorization"].ToString();
+                           if (authHeader.StartsWith("Bearer "))
+                           {
+                               context.Token = authHeader.Substring("Bearer ".Length).Trim();
+                           }
+                       }
+
+                       return Task.CompletedTask;
+                   }
+               };
+           });
 
             // add mapper
+            builder.Services.AddAutoMapper(cfg => { }, typeof(MappingProfile).Assembly);
 
             // add repositories
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
 
             // add services
             builder.Services.AddScoped<IChatService, ChatService>();
+            builder.Services.AddScoped<IUserService, UserService>();
 
             // add swagger
             builder.Services.AddEndpointsApiExplorer();
@@ -57,6 +109,7 @@ namespace API
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
 

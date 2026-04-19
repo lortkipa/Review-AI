@@ -6,6 +6,27 @@
     </div>
     <div class="header-right">
         <div class="reviews-left"><span id="reviews-count">3</span> reviews left today</div>
-        <button class="btn-pro">Upgrade to Pro ✦</button>
+        <button class="btn-pro" *ngIf="user != null">Upgrade to Pro ✦</button>
+        <button class="btn-pro" *ngIf="user == null" routerLink="/auth">Sign In</button>
+        <div class="user-menu-wrap" *ngIf="user != null">
+            <img 
+                class="user-avatar" 
+                id="user-avatar" 
+                [src]="user.pictureUrl"
+                (click)="toggleDropdown()">
+            <div class="user-dropdown open" id="user-dropdown" *ngIf="showDropdown()">
+                <div class="user-info">
+                    <div class="user-name" id="dd-name">{{user.fullName}}</div>
+                    <div class="user-email" id="dd-email">{{user.email}}</div>
+                    <div class="user-plan">✦ Free plan · 4 reviews/day</div>
+                    <!-- <div class="google-connected" id="google-connected" style="display: inline-flex;">✓ Google connected</div> -->
+                </div>
+                <!-- <button class="dropdown-item" id="connect-google-btn">Connect Google</button> -->
+                <button class="dropdown-item">⚙ Settings</button>
+                <button class="dropdown-item">✦ Upgrade to Pro</button>
+                <div class="dropdown-sep"></div>
+                <button class="dropdown-item danger" (click)="logout()">→ Sign out</button>
+            </div>
+        </div>
     </div>
 </header>

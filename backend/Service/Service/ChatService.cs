@@ -18,7 +18,8 @@ namespace Service
     public class ChatService : IChatService
     {
         private readonly Client _client;
-        private readonly string _model = "gemini-3.1-flash-lite-preview";
+        //private readonly string _model = "gemini-3.1-flash-lite-preview";
+        private readonly string _model = "gemini-2.5-flash-lite";
 
         public ChatService()
         {
@@ -37,10 +38,6 @@ namespace Service
 
             string prompt = @$"
                 Act as a code analysis engine. Analyze the provided code snippet and return the results strictly as a single, raw JSON object following the schema below.
-
-                Constraints:
-                    - Do not use code blocks (```). Do not include any preamble or post-amble text. Output only the raw JSON string.
-                    - Ensure CodeQuality and Lines are unsigned integers.
                 
                 Scoring Logic:
                     - 'codeQuality' must be an integer between 0 and 100.
@@ -80,7 +77,14 @@ namespace Service
                         ]
                     }}
 
-                REMINDER: OUTPUT PURE JSON WITHOUT ANYTHING ELSE
+                
+                OUTPUT FORMAT RULE (STRICT):
+                    - Return ONLY a valid JSON object.
+                    - Do NOT wrap the output in markdown.
+                    - Do NOT use triple backticks (``` or ```json).
+                    - Do NOT include explanations, headers, or extra text.
+                    - The first character of the response MUST be '{{' and the last character MUST be '}}'.
+                    - Any deviation from raw JSON will be considered invalid output.
 
                 Code to analyze (line numbered):
                 {numberedCode}
